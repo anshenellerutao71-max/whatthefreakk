@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Confession ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Floating hearts -->
+    <div class="hearts">
+        <span>❤️</span>
+        <span>💗</span>
+        <span>💕</span>
+        <span>💖</span>
+        <span>❤️</span>
+        <span>💗</span>
+        <span>💕</span>
+    </div>
+
+    <div class="card">
+
+        <!-- NAME SECTION -->
+        <section id="nameSection">
+
+            <div class="main-heart">❤️</div>
+
+            <h1>Hey...</h1>
+
+            <p>
+                Before I tell you something,
+                can I know your name?
+            </p>
+
+            <input
+                type="text"
+                id="nameInput"
+                placeholder="Enter your name..."
+            >
+
+            <button onclick="startConfession()">
+                Continue 💌
+            </button>
+
+        </section>
+
+
+        <!-- CONFESSION SECTION -->
+        <section id="confessionSection">
+
+            <div class="letter">💌</div>
+
+            <h1>
+                Hey, <span id="personName"></span> ❤️
+            </h1>
+
+            <p>
+                I've been wanting to tell you
+                something for a while.
+            </p>
+
+            <p>
+                I don't really know how to say it,
+                so I'll just be honest...
+            </p>
+
+            <p class="confession">
+                I really like you. ❤️
+            </p>
+
+            <p>
+                I've kept this to myself for quite some time,
+                and I finally wanted to tell you.
+            </p>
+
+            <h2>
+                Is this okay with you? 💗
+            </h2>
+
+            <button
+                class="yes"
+                onclick="okayAnswer()">
+                YES ❤️
+            </button>
+
+            <button
+                class="no"
+                onclick="notOkayAnswer()">
+                NO
+            </button>
+
+        </section>
+
+
+        <!-- CHANCE SECTION -->
+        <section id="chanceSection">
+
+            <div class="main-heart">💗</div>
+
+            <h1>
+                One more question...
+            </h1>
+
+            <p>
+                Do I have a chance with you?
+            </p>
+
+            <button
+                class="yes"
+                onclick="chanceYes()">
+                YES 💗
+            </button>
+
+            <button
+                class="no"
+                onclick="chanceNo()">
+                NO
+            </button>
+
+        </section>
+
+
+        <!-- FINAL SECTION -->
+        <section id="finalSection">
+
+            <div id="finalEmoji">
+                ❤️
+            </div>
+
+            <h1 id="finalTitle">
+            </h1>
+
+            <p id="finalMessage">
+            </p>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
